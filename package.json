@@ -1,5 +1,5 @@
 {
-  "name": "inline-sass",
+  "name": "@battis/inline-sass-to-clipboard",
   "version": "1.0.0",
   "description": "",
   "type": "module",
