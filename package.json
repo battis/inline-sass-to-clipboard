@@ -14,7 +14,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "html-minifier": "^4.0.0",
-    "inline-sass": "^1.0.0",
+    "inline-sass": "battis/inline-sass",
     "node-html-parser": "^5.0.0"
   }
 }
