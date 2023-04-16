@@ -14,7 +14,15 @@
   "license": "GPL-3.0",
   "dependencies": {
     "html-minifier": "^4.0.0",
-    "inline-sass": "battis/inline-sass",
-    "node-html-parser": "^5.0.0"
+    "inline-sass": "github:battis/inline-sass",
+    "node-html-parser": "^5.4.2"
+  },
+  "devDependencies": {
+    "@battis/eslint-config": "github:battis/eslint-config",
+    "@battis/prettier-config": "github:battis/prettier-config"
+  },
+  "prettier": "@battis/prettier-config",
+  "eslintConfig": {
+    "extends": "@battis/eslint-config"
   }
 }

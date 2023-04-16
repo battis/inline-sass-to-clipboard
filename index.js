@@ -1,9 +1,9 @@
 import child_process from 'child_process';
 import fs from 'fs';
-import path from 'path';
+import { minify } from 'html-minifier';
 import inlineSass from 'inline-sass';
 import { parse } from 'node-html-parser';
-import { minify } from 'html-minifier';
+import path from 'path';
 
 const defaults = {
   removeElementsBeforeSelector: '[data-purpose="dev"]',
