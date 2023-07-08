@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "type": "module",
+  "engines": {
+    "node": ">=12.17"
+  },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "np --yolo --omit=dev"
   },
   "author": {
     "name": "Seth Battis",
@@ -14,12 +17,13 @@
   "license": "GPL-3.0",
   "dependencies": {
     "html-minifier": "^4.0.0",
-    "inline-sass": "github:battis/inline-sass",
+    "inline-sass": "^1.1.1",
     "node-html-parser": "^5.4.2"
   },
   "devDependencies": {
-    "@battis/eslint-config": "github:battis/eslint-config",
-    "@battis/prettier-config": "github:battis/prettier-config"
+    "@battis/eslint-config": "latest",
+    "@battis/prettier-config": "latest",
+    "np": "^8.0.4"
   },
   "prettier": "@battis/prettier-config",
   "eslintConfig": {
