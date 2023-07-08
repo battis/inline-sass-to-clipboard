@@ -17,7 +17,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "html-minifier": "^4.0.0",
-    "inline-sass": "file:../inline-sass",
+    "inline-sass": "^1.2.0",
     "node-html-parser": "^5.4.2"
   },
   "devDependencies": {
