@@ -9,8 +9,8 @@ dependencies:
     specifier: ^4.0.0
     version: 4.0.0
   inline-sass:
-    specifier: ^1.1.1
-    version: 1.1.1
+    specifier: file:../inline-sass
+    version: file:../inline-sass
   node-html-parser:
     specifier: ^5.4.2
     version: 5.4.2
@@ -2550,17 +2550,6 @@ packages:
       - supports-color
     dev: false
 
-  /inline-sass@1.1.1:
-    resolution: {integrity: sha512-0U+G+fcLXg/TxQ2iF639gncL1B0iTcKEQQwJrRK/HnOQr6KdUpInxFYZTLSGKUhXFskpP9ctBxo59IrgOd0dCw==}
-    engines: {node: '>=12.17'}
-    dependencies:
-      inline-css: 3.0.0
-      node-html-parser: 5.4.2
-      sass: 1.63.6
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /inquirer-autosubmit-prompt@0.2.0:
     resolution: {integrity: sha512-mzNrusCk5L6kSzlN0Ioddn8yzrhYNLli+Sn2ZxMuLechMYAzakiFCIULxsxlQb5YKzthLGfrFACcWoAvM7p04Q==}
     dependencies:
@@ -5029,3 +5018,15 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
     dev: true
+
+  file:../inline-sass:
+    resolution: {directory: ../inline-sass, type: directory}
+    name: inline-sass
+    engines: {node: '>=12.17'}
+    dependencies:
+      inline-css: 3.0.0
+      node-html-parser: 5.4.2
+      sass: 1.63.6
+    transitivePeerDependencies:
+      - supports-color
+    dev: false

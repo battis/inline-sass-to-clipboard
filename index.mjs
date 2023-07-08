@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import child_process from 'child_process';
 import fs from 'fs';
 import { minify } from 'html-minifier';
@@ -16,8 +18,8 @@ const defaults = {
     collapseBooleanAttributes: true,
     minifyCSS: true,
     removeRedundantAttributes: true,
-    minifyURLs: true,
-  },
+    minifyURLs: true
+  }
 };
 
 const copyToClipboard = (data) => {
@@ -28,7 +30,7 @@ const copyToClipboard = (data) => {
 
 const options = {
   ...defaults,
-  ...(process.argv[3] ? JSON.parse(process.argv[3]) : {}),
+  ...(process.argv[3] ? JSON.parse(process.argv[3]) : {})
 };
 
 let html = process.argv[2];

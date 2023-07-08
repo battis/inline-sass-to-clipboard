@@ -6,7 +6,7 @@
   "engines": {
     "node": ">=12.17"
   },
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
     "release": "np --yolo --omit=dev"
   },
@@ -17,7 +17,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "html-minifier": "^4.0.0",
-    "inline-sass": "^1.1.1",
+    "inline-sass": "file:../inline-sass",
     "node-html-parser": "^5.4.2"
   },
   "devDependencies": {
@@ -27,6 +27,9 @@
   },
   "prettier": "@battis/prettier-config",
   "eslintConfig": {
-    "extends": "@battis/eslint-config"
+    "extends": "@battis/eslint-config",
+    "parserOptions": {
+      "sourceType": "module"
+    }
   }
 }
